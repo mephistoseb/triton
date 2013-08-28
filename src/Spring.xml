@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bean id="myTestBean" class="com.stw.core.person.Person" scope="prototype" factory-method="createNew" depends-on="dataSource">
+	<property name="firstName" value="${first.name}"/>
+	<property name="phone" ref="phone"/>
+</bean>
+
+<!-- 
+id="myTestBean" : This id can be used to share this component with another component.
+class="com.stw.core.person.Person" : The class that represeent the object that we want for dependency injection.
+scope="prototype" : Every time the bean is called, it will create a new instance and give a reference to that.
+factory-method="createNew" : A new instance will be created only when the static method createNew will be called.
+depends-on="dataSource" : dataSource must be initialized before instantiated this one.
+value="${first.name}" : first.name is an external variable, probably from a properties.
+ref="phone" : phone make a reference to another bean called phone.
+-->

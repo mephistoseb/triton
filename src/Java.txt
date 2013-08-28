@@ -1,0 +1,5 @@
+Suppose you are using a Map.
+How would you go about detecting the amount of times put() and get() are called on it.
+
+If extends Map with my own class is viable solution, I would extend it and put some kind of counter for each call.
+Otherwise, I would use a profiler to count the number of invocations of these methods.

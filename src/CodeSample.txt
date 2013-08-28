@@ -1,0 +1,8 @@
+Can you supply a sample of code (or a link towards) 
+which you would consider production ready, elegant and high quality.
+
+I would say that I consider that every thing that is coming from Apache is top notch.
+But even with them, there is always a possibility of bugs.
+If you need a sample/link, I would say that the guys that are working on Atmosphere project are doing pretty clean code :
+(for example)
+https://github.com/Atmosphere/atmosphere-extensions/tree/master/gwt/modules/atmosphere-gwt-js/src/main/java/org/atmosphere/gwt/js
